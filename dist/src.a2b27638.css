@@ -87033,21 +87033,5 @@ video {
   }
 }
 
-@import url("https://fonts.googleapis.com/css?family=Lato");
-
-html {
-  font-family: "Lato", sans-serif;
-}
-
-.Inconsolata {
-  font-family: "Inconsolata", monospace;
-}
-
-.active,
-.btn:hover {
-  background-color: #666;
-  color: white;
-}
-
 
 /*# sourceMappingURL=/src.a2b27638.css.map */

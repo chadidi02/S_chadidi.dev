@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>portfolio</title>
 
-    <link rel="stylesheet" href="css/style.css">
     <link href="https://unpkg.com/tailwindcss@next/dist/tailwind.min.css" rel="stylesheet">
     <!-- font-awesome -->
     <link rel="stylesheet" type="text/css"
@@ -29,8 +28,9 @@
 
         .active,
         .btn:hover {
-            background-color: #666;
-            color: white;
+            color: #9f7aea;
+            border-left-width: 5px;
+
         }
     </style>
 </head>
@@ -46,17 +46,17 @@
             <div class="myDIV w-0 md:w-1/4 lg:w-1/5 h-0 md:h-screen overflow-y-hidden bg-white shadow-lg">
                 <div class=" w-full h-screen antialiased flex flex-col hover:cursor-pointer">
                     <a id="defaultOpen"
-                        class="btn tablinks active p-3 w-full text-xl text-left text-gray-600 font-semibold hover:text-green-600 outline-none"
+                        class="btn tablinks block  active p-3 w-full text-xl text-left font-semibold no-underline pl-12 border-purple-500  outline-none"
                         href="#Home" onclick="openCity(event, 'Home')">Home</a>
-                    <a class="btn tablinks p-3 w-full text-xl text-left text-gray-600 font-semibold hover:text-green-600 outline-none"
+                    <a class="btn tablinks block  p-3 w-full text-xl text-left font-semibold no-underline pl-12 border-purple-500  outline-none"
                         href="#About" onclick="openCity(event, 'About')">About me</a>
-                    <a class="btn tablinks p-3 w-full text-xl text-left text-gray-600 font-semibold hover:text-green-600 outline-none"
+                    <a class="btn tablinks block  p-3 w-full text-xl text-left font-semibold no-underline pl-12 border-purple-500  outline-none"
                         href="#Portfolio" onclick="openCity(event, 'Portfolio')">Portfolio</a>
-                    <a class="btn tablinks p-3 w-full text-xl text-left text-gray-600 font-semibold hover:text-green-600 outline-none"
+                    <a class="btn tablinks block  p-3 w-full text-xl text-left font-semibold no-underline pl-12 border-purple-500  outline-none"
                         href="#Timeline" onclick="openCity(event, 'Timeline')">Timeline</a>
-                    <a class="btn tablinks p-3 w-full text-xl text-left text-gray-600 font-semibold hover:text-green-600 outline-none"
+                    <a class="btn tablinks block  p-3 w-full text-xl text-left font-semibold no-underline pl-12 border-purple-500  outline-none"
                         href="#Blog" onclick="openCity(event, 'Blog')">Blog</a>
-                    <a class="btn tablinks p-3 w-full text-xl text-left text-gray-600 font-semibold hover:text-green-600 outline-none"
+                    <a class="btn tablinks block  p-3 w-full text-xl text-left font-semibold no-underline  pl-12 border-purple-500  outline-none"
                         href="#Contact" onclick="openCity(event, 'Contact')">Contact</a>
                 </div>
             </div>
