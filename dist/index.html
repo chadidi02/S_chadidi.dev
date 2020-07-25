@@ -9,7 +9,7 @@
 
     <link href="https://unpkg.com/tailwindcss@next/dist/tailwind.min.css" rel="stylesheet">
     <!-- font-awesome -->
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
     <!-- fonts google -->
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;800&display=swap" rel="stylesheet">
 
@@ -27,378 +27,422 @@ html {
         .btn:hover {
   color: #9f7aea;
   border-left-width: 5px;
+}
+
+.effect:hover .info {
+  opacity: 1;
 }</style>
 <link rel="stylesheet" href="/src.a2b27638.css"></head>
 
 <body class="">
 
+    <div class="w-full h-full flex flex-row flex-wrap justify-center z-50 relative">
 
-    <div class="w-full flex flex-row flex-wrap">
-
-        <div class="w-full bg-indigo-100 h-screen flex flex-row flex-wrap justify-center ">
-
-            <!-- Begin Navbar -->
-            <div class="myDIV w-0 md:w-1/4 lg:w-1/5 h-0 md:h-screen overflow-y-hidden bg-white shadow-lg">
-                <div class=" w-full h-screen antialiased flex flex-col hover:cursor-pointer">
-                    <a id="defaultOpen" class="btn tablinks block  active p-3 w-full text-xl text-left font-semibold no-underline pl-12 border-purple-500  outline-none" href="#Home" onclick="openCity(event, 'Home')">Home</a>
-                    <a class="btn tablinks block  p-3 w-full text-xl text-left font-semibold no-underline pl-12 border-purple-500  outline-none" href="#About" onclick="openCity(event, 'About')">About me</a>
-                    <a class="btn tablinks block  p-3 w-full text-xl text-left font-semibold no-underline pl-12 border-purple-500  outline-none" href="#Portfolio" onclick="openCity(event, 'Portfolio')">Portfolio</a>
-                    <a class="btn tablinks block  p-3 w-full text-xl text-left font-semibold no-underline pl-12 border-purple-500  outline-none" href="#Timeline" onclick="openCity(event, 'Timeline')">Timeline</a>
-                    <a class="btn tablinks block  p-3 w-full text-xl text-left font-semibold no-underline pl-12 border-purple-500  outline-none" href="#Blog" onclick="openCity(event, 'Blog')">Blog</a>
-                    <a class="btn tablinks block  p-3 w-full text-xl text-left font-semibold no-underline  pl-12 border-purple-500  outline-none" href="#Contact" onclick="openCity(event, 'Contact')">Contact</a>
-                </div>
+        <!-- Begin Navbar -->
+        <aside class="myDIV fixed top-0 left-0 bottom-0 md:w-1/4 lg:w-1/5 h-0 md:h-screen overflow-y-hidden bg-white shadow-lg">
+            <div class=" w-full h-full antialiased flex flex-col hover:cursor-pointer">
+                <a id="defaultOpen" class="btn tablinks block  active p-3 w-full text-xl text-left font-semibold no-underline pl-12 border-purple-500  outline-none" href="#Home" onclick="openCity(event, 'Home')">Home</a>
+                <a class="btn tablinks block  p-3 w-full text-xl text-left font-semibold no-underline pl-12 border-purple-500  outline-none" href="#Portfolio" onclick="openCity(event, 'Work')">Work</a>
+                <a class="btn tablinks block  p-3 w-full text-xl text-left font-semibold no-underline pl-12 border-purple-500  outline-none" href="#Timeline" onclick="openCity(event, 'Experience')">Experience</a>
+                <a class="btn tablinks block  p-3 w-full text-xl text-left font-semibold no-underline pl-12 border-purple-500  outline-none" href="#Blog" onclick="openCity(event, 'Blog')">Blog</a>
             </div>
+        </aside>
 
-            <!-- End Navbar -->
+        <!-- End Navbar -->
 
-            <div class="Inconsolata w-full md:w-3/4 lg:w-4/5 p-5 md:px-8 lg:24 h-full overflow-x-scroll antialiased">
+        <div class="Inconsolata ml-64 w-full md:w-3/4 lg:w-4/5 p-5 md:px-8 lg:24" style="margin-bottom: 19.7rem; background: #eeeeee;">
+            <!-- home -->
+            <section id="Home" class="tabcontent container">
 
-                <div id="Home" class="tabcontent container">
-
-                    <div class="w-full md:flex flex flex-row flex-wrap bg-white  shadow rounded p-5 my-5">
-                        <div class="w-1/3 text-left">
-                            <img class=" w-32 h-32 md:w-64 md:h-64 md:rounded rounded-full " src="/chadidi.01cb7b57.jpg" alt="">
+                <div class="w-full md:flex flex flex-row flex-wrap  p-5 mb-5 ">
+                    <div class="w-1/3 text-left">
+                        <img class=" w-32 h-32 md:w-64 md:h-64 md:rounded rounded-full " src="/chadidi.01cb7b57.jpg" alt="">
+                    </div>
+                    <div class="w-1/2 leading-loose md:ml-0 ml-5">
+                        <h2 class="text-lg font-bold">Souhaib Chadidi</h2>
+                        <div class="text-purple-500">I'm Souhaib, I do Front-end_ Dev</div>
+                        <div class="text-gray-600"><img class="w-4 float-left block mr-2" style="margin-top: 8px;" src="/place.8e5a5e80.svg" alt=""> Tetouan, Morocco</div>
+                        <div class="text-gray-600"><img class="w-4 float-left block mr-2" style="margin-top: 8px;" src="/link.49fcd47b.svg" alt=""> <a class="" href="https://www.fevrok.com/">fevrok</a>
                         </div>
-                        <div class="w-1/2 leading-loose md:ml-0 ml-5">
-                            <h2 class="text-lg font-bold">Souhaib Chadidi</h2>
-                            <div class="text-purple-500">I'm Souhaib, I do Front-end_ Dev</div>
-                            <div class="text-gray-600"><img class="w-4 float-left block mr-2" style="margin-top: 8px;" src="/place.8e5a5e80.svg" alt=""> Tetouan, Morocco</div>
-                            <div class="text-gray-600"><img class="w-4 float-left block mr-2" style="margin-top: 8px;" src="/link.49fcd47b.svg" alt=""> <a class="" href="https://www.fevrok.com/">fevrok</a>
-                            </div>
-                            <div class="text-gray-600"><img class="w-4 float-left block mr-2" style="margin-top: 8px;" src="/envelope.8721ed40.svg" alt=""><a href="">s.chadidi02@gmail.com</a></div>
-                            <div class="text-gray-600"><img class="w-4 float-left block mr-2" style="margin-top: 8px;" src="/phone.00c8e429.svg" alt=""> <a href="">(+212) 662864245</a></div>
-                            <div class=" w-64 mt-5 mx-0 pb-16 lg:pb-0  flex flex-wrap items-center justify-between">
+                        <div class="text-gray-600"><img class="w-4 float-left block mr-2" style="margin-top: 8px;" src="/envelope.8721ed40.svg" alt=""><a href="">s.chadidi02@gmail.com</a></div>
+                        <div class="text-gray-600"><img class="w-4 float-left block mr-2" style="margin-top: 8px;" src="/phone.00c8e429.svg" alt=""> <a href="">(+212) 662864245</a></div>
+                        <div class=" w-64 mt-5 mx-0 pb-16 lg:pb-0  flex flex-wrap items-center justify-between">
 
-                                <a class="link" href="#" data-tippy-content="@twitter_handle"><svg class="h-6 fill-current text-gray-600 hover:text-purple-500" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <title>Twitter</title>
-                                        <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"></path>
-                                    </svg></a>
-                                <a class="link" href="#" data-tippy-content="@github_handle"><svg class="h-6 fill-current text-gray-600 hover:text-purple-500" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <title>GitHub</title>
-                                        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
-                                    </svg></a>
-                                <a class="link" href="#" data-tippy-content="@facebook_handle"><svg class="h-6 fill-current text-gray-600 hover:text-purple-500" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <title>Facebook</title>
-                                        <path d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0"></path>
-                                    </svg></a>
-                                <a class="link" href="#" data-tippy-content="@instagram_handle"><svg class="h-6 fill-current text-gray-600 hover:text-purple-500" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <title>Instagram</title>
-                                        <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"></path>
-                                    </svg></a>
-                            </div>
+                            <a class="link" href="#" data-tippy-content="@twitter_handle"><svg class="h-6 fill-current text-gray-600 hover:text-purple-500" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Twitter</title>
+                                    <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"></path>
+                                </svg></a>
+                            <a class="link" href="#" data-tippy-content="@github_handle"><svg class="h-6 fill-current text-gray-600 hover:text-purple-500" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <title>GitHub</title>
+                                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+                                </svg></a>
+                            <a class="link" href="#" data-tippy-content="@facebook_handle"><svg class="h-6 fill-current text-gray-600 hover:text-purple-500" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Facebook</title>
+                                    <path d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0"></path>
+                                </svg></a>
+                            <a class="link" href="#" data-tippy-content="@instagram_handle"><svg class="h-6 fill-current text-gray-600 hover:text-purple-500" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Instagram</title>
+                                    <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"></path>
+                                </svg></a>
                         </div>
                     </div>
+                </div>
 
-                    <section class="bg-white py-8 rounded">
+                <section class="py-8 ">
 
-                        <div class=" mx-24">
-                            <h2 class="text-2xl text-gray-800">Portfolio.</h2>
+                    <div class="px-24">
+                        <div class="  w-full ">
+                            <span class="text-sm text-gray-600 tracking-widest">About me.</span>
+                            <h2 class="text-2xl text-gray-900 tracking-wider">WHO AM I?</h2>
                             <p class=" py-5 leading-8 text-gray-600">
                                 My everyday work is presented here, I do what i love, <br>
                                 Who I am, what I do and my social networks, connect with me.
                             </p>
                         </div>
-                        <div class="container mx-auto flex items-center flex-wrap pt-4 pb-12">
-
-
-                            <div class="w-full md:w-1/2 xl:w-1/3 p-6 flex flex-col">
-                                <a href="#">
-                                    <img class="hover:grow hover:shadow-lg" src="/1.06f8af9e.png">
-                                    <div class="pt-3 flex items-center justify-between">
-                                        <p class="">Product Name</p>
-                                        <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                            <path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"></path>
-                                        </svg>
+                        <div class="pt-4 pb-12 w-full">
+                            <div class=" mb-3 ">
+                                <div class="flex items-center justify-between p-3">
+                                    <div class="flex items-center">
+                                        <div class="h-6 w-6 text-xs bg-purple-600 text-white flex items-center justify-center rounded-full">
+                                            <i class="fa fa-star" aria-hidden="true"></i></div>
+                                        <div class="w-2"></div>
+                                        <h2 class="text-2xl text-gray-800 font-medium">My Skills.</h2>
                                     </div>
-                                    <span class="pt-5 text-teal-600">Photoshop Website</span>
-                                </a>
-                            </div>
-
-                            <div class="w-full md:w-1/2 xl:w-1/3 p-6 flex flex-col">
-                                <a href="#">
-                                    <img class="hover:grow hover:shadow-lg" src="/2.ec21867c.png">
-                                    <div class="pt-3 flex items-center justify-between">
-                                        <p class="">Product Name</p>
-                                        <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                            <path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"></path>
-                                        </svg>
-                                    </div>
-                                    <span class="pt-5 text-teal-600">Photoshop Website</span>
-                                </a>
-                            </div>
-
-                            <div class="w-full md:w-1/2 xl:w-1/3 p-6 flex flex-col">
-                                <a href="#">
-                                    <img class="hover:grow hover:shadow-lg" src="/3.5d1f2f90.png">
-                                    <div class="pt-3 flex items-center justify-between">
-                                        <p class="">Product Name</p>
-                                        <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                            <path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"></path>
-                                        </svg>
-                                    </div>
-                                    <span class="pt-5 text-teal-600">Photoshop Website</span>
-                                </a>
-                            </div>
-
-                            <div class="w-full md:w-1/2 xl:w-1/3 p-6 flex flex-col">
-                                <a href="#">
-                                    <img class="hover:grow hover:shadow-lg" src="/4.defeea9e.png">
-                                    <div class="pt-3 flex items-center justify-between">
-                                        <p class="">Product Name</p>
-                                        <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                            <path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"></path>
-                                        </svg>
-                                    </div>
-                                    <span class="pt-5 text-teal-600">Photoshop Website</span>
-                                </a>
-                            </div>
-
-                            <div class="w-full md:w-1/2 xl:w-1/3 p-6 flex flex-col">
-                                <a href="#">
-                                    <img class="hover:grow hover:shadow-lg" src="/5.7803c2e3.png">
-                                    <div class="pt-3 flex items-center justify-between">
-                                        <p class="">Product Name</p>
-                                        <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                            <path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"></path>
-                                        </svg>
-                                    </div>
-                                    <span class="pt-5 text-teal-600">Photoshop Website</span>
-                                </a>
-                            </div>
-
-                            <div class="w-full md:w-1/2 xl:w-1/3 p-6 flex flex-col">
-                                <a href="#">
-                                    <img class="hover:grow hover:shadow-lg" src="/6.ccf5d0a1.png">
-                                    <div class="pt-3 flex items-center justify-between">
-                                        <p class="">Product Name</p>
-                                        <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                            <path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"></path>
-                                        </svg>
-                                    </div>
-                                    <span class="pt-5 text-teal-600">Photoshop Website</span>
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </section>
-
-                </div>
-                <!-- about -->
-                <section id="About" class="tabcontent bg-white py-8 rounded">
-
-                    <div class=" mx-24">
-                        <h2 class="text-2xl text-gray-800">About me.</h2>
-                        <p class=" py-5 leading-8 text-gray-600">
-                            My everyday work is presented here, I do what i love, <br>
-                            Who I am, what I do and my social networks, connect with me.
-                        </p>
-                    </div>
-                    <div class="container mx-auto flex items-center flex-wrap pt-4 pb-12">
-                        <div class="w-full p-6 flex flex-col">
-                            <img src="/nelly-antoniadou-9X1P46Y2KJo-unsplash.409c54d8.jpg" alt="">
-                        </div>
-
-                        <div class="w-full  p-6 flex flex-col">
-                            <h1 class="text-2xl text-gray-800">SOUHAIB CHADIDI</h1>
-                            <small class=" text-gray-600">LEAD DEVELOPER</small>
-                            <div class="mt-10 text-gray-600 leading-relaxed ">
-                                <p> I’m a Full-Stack developer with over 5 years of professional experience building
-                                    efficient and scalable web applications.</p>
-                                <br>
-                                <p>I’ve worked in extremely fast paced startup environments (including my own) as well
-                                    as
-                                    highly structured, corporate environments.</p>
-                                <br>
-                                <p>I see every new experience as an opportunity to learn, and I find learning to be the
-                                    most enjoyable part of my day to day work. On a daily basis, I work with
-                                    technologies
-                                    such as PHP, javascript, GIT, MySQL, C#, ElasticSearch, Amazon web services, Docker,
-                                    Redis, CI/CD as well as other front & back end web development libraries such as
-                                    Laravel, Symfony, Twitter Bootstrap & Google Material Design, Tailwind CSS…</p>
-                                <br>
-                                <p>I understand the importance of placing focus on the end goal: delivering a beautiful,
-                                    functional product to the user/client.</p>
-                                <br>
-                                <p>When I’m not behind a computer screen, I’m out somewhere exploring, cooking, or
-                                    playing
-                                    sports.</p>
+                                </div>
+                                <div class="p-3">
+                                    <table class="w-full">
+                                        <tr>
+                                            <td class="ltr:pr-2 rtl:pl-2 rtl:text-left ltr:text-right truncate"><span class="font-medium text-sm">JavaScript : </span></td>
+                                            <td valign="bottom" class="w-full">
+                                                <div class="rounded-full h-1 bg-white-100 bg-gray-200 overflow-hidden mb-2">
+                                                    <div class="bg-purple-500 h-full" style="width: 20%;"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ltr:pr-2 rtl:pl-2 rtl:text-left ltr:text-right truncate"><span class="font-medium text-sm">CSS : </span></td>
+                                            <td valign="bottom" class="w-full">
+                                                <div class="rounded-full h-1 bg-white-100 bg-gray-200 overflow-hidden mb-2">
+                                                    <div class="bg-purple-500 h-full" style="width: 80%;"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ltr:pr-2 rtl:pl-2 rtl:text-left ltr:text-right truncate"><span class="font-medium text-sm">HTML : </span></td>
+                                            <td valign="bottom" class="w-full">
+                                                <div class="rounded-full h-1 bg-white-100 bg-gray-200 overflow-hidden mb-2">
+                                                    <div class="bg-purple-500 h-full" style="width: 100%;"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ltr:pr-2 rtl:pl-2 rtl:text-left ltr:text-right truncate"><span class="font-medium text-sm">testing : </span></td>
+                                            <td valign="bottom" class="w-full">
+                                                <div class="rounded-full h-1 bg-white-100 bg-gray-200 overflow-hidden mb-2">
+                                                    <div class="bg-purple-500 h-full" style="width: 40%;"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                 </section>
 
-                <!-- Portfolio -->
-                <div id="Portfolio" class="tabcontent  w-full lg:w-4/5 p-8 mt-6 ">
-                    <div class="py-20 ">
-                        <h2 class="text-2xl text-gray-800">Portfolio</h2>
-                        <p class=" py-5 leading-8 text-gray-500">
-                            My everyday work is presented here, I do what i love, <br>
-                            Who I am, what I do and my social networks, connect with me.
-                        </p>
-                    </div>
-                    <p class="py-6">
-                        👋 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis nobis in
-                        repellendus quam illum vitae laboriosam modi aspernatur est! Ipsa rerum expedita maxime.
-                        Doloribus
-                        explicabo eligendi neque provident commodi.
+            </section>
+            <!-- Work -->
+            <section id="Work" class="tabcontent container">
+                <div class="w-full p-5 mb-5">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates culpa nihil non vitae est?
+                        Sed, odit excepturi similique, cumque ad quos accusantium corporis sapiente aspernatur beatae a
+                        tenetur, cum rem!
                     </p>
-                    <p class="py-6">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis nobis in
-                        repellendus quam illum vitae laboriosam modi aspernatur est! Ipsa rerum expedita maxime.
-                        Doloribus
-                        explicabo eligendi neque provident commodi.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis nobis in
-                        repellendus quam illum vitae laboriosam modi aspernatur est! Ipsa rerum expedita maxime.
-                        Doloribus
-                        explicabo eligendi neque provident commodi.
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates culpa nihil non vitae est?
+                        Sed, odit excepturi similique, cumque ad quos accusantium corporis sapiente aspernatur beatae a
+                        tenetur, cum rem!
                     </p>
-                    <p class="py-6">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis nobis in
-                        repellendus quam illum vitae laboriosam modi aspernatur est! Ipsa rerum expedita maxime.
-                        Doloribus
-                        explicabo eligendi neque provident commodi.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis nobis in
-                        repellendus quam illum vitae laboriosam modi aspernatur est! Ipsa rerum expedita maxime.
-                        Doloribus
-                        explicabo eligendi neque provident commodi.
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates culpa nihil non vitae est?
+                        Sed, odit excepturi similique, cumque ad quos accusantium corporis sapiente aspernatur beatae a
+                        tenetur, cum rem!
                     </p>
-                    <p class="py-6">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis nobis in
-                        repellendus quam illum vitae laboriosam modi aspernatur est! Ipsa rerum expedita maxime.
-                        Doloribus
-                        explicabo eligendi neque provident commodi.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis nobis in
-                        repellendus quam illum vitae laboriosam modi aspernatur est! Ipsa rerum expedita maxime.
-                        Doloribus
-                        explicabo eligendi neque provident commodi.
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates culpa nihil non vitae est?
+                        Sed, odit excepturi similique, cumque ad quos accusantium corporis sapiente aspernatur beatae a
+                        tenetur, cum rem!
                     </p>
-                    <p class="py-6">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis nobis in
-                        repellendus quam illum vitae laboriosam modi aspernatur est! Ipsa rerum expedita maxime.
-                        Doloribus
-                        explicabo eligendi neque provident commodi.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis nobis in
-                        repellendus quam illum vitae laboriosam modi aspernatur est! Ipsa rerum expedita maxime.
-                        Doloribus
-                        explicabo eligendi neque provident commodi.
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates culpa nihil non vitae est?
+                        Sed, odit excepturi similique, cumque ad quos accusantium corporis sapiente aspernatur beatae a
+                        tenetur, cum rem!
                     </p>
-                    <p class="py-6">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis nobis in
-                        repellendus quam illum vitae laboriosam modi aspernatur est! Ipsa rerum expedita maxime.
-                        Doloribus
-                        explicabo eligendi neque provident commodi.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis nobis in
-                        repellendus quam illum vitae laboriosam modi aspernatur est! Ipsa rerum expedita maxime.
-                        Doloribus
-                        explicabo eligendi neque provident commodi.
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates culpa nihil non vitae est?
+                        Sed, odit excepturi similique, cumque ad quos accusantium corporis sapiente aspernatur beatae a
+                        tenetur, cum rem!
                     </p>
-                    <p class="py-6">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis nobis in
-                        repellendus quam illum vitae laboriosam modi aspernatur est! Ipsa rerum expedita maxime.
-                        Doloribus
-                        explicabo eligendi neque provident commodi.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis nobis in
-                        repellendus quam illum vitae laboriosam modi aspernatur est! Ipsa rerum expedita maxime.
-                        Doloribus
-                        explicabo eligendi neque provident commodi.
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates culpa nihil non vitae est?
+                        Sed, odit excepturi similique, cumque ad quos accusantium corporis sapiente aspernatur beatae a
+                        tenetur, cum rem!
                     </p>
-                    <p class="py-6">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis nobis in
-                        repellendus quam illum vitae laboriosam modi aspernatur est! Ipsa rerum expedita maxime.
-                        Doloribus
-                        explicabo eligendi neque provident commodi.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis nobis in
-                        repellendus quam illum vitae laboriosam modi aspernatur est! Ipsa rerum expedita maxime.
-                        Doloribus
-                        explicabo eligendi neque provident commodi.
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates culpa nihil non vitae est?
+                        Sed, odit excepturi similique, cumque ad quos accusantium corporis sapiente aspernatur beatae a
+                        tenetur, cum rem!
                     </p>
-                    <p class="py-6">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis nobis in
-                        repellendus quam illum vitae laboriosam modi aspernatur est! Ipsa rerum expedita maxime.
-                        Doloribus
-                        explicabo eligendi neque provident commodi.
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates culpa nihil non vitae est?
+                        Sed, odit excepturi similique, cumque ad quos accusantium corporis sapiente aspernatur beatae a
+                        tenetur, cum rem!
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates culpa nihil non vitae est?
+                        Sed, odit excepturi similique, cumque ad quos accusantium corporis sapiente aspernatur beatae a
+                        tenetur, cum rem!
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates culpa nihil non vitae est?
+                        Sed, odit excepturi similique, cumque ad quos accusantium corporis sapiente aspernatur beatae a
+                        tenetur, cum rem!
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates culpa nihil non vitae est?
+                        Sed, odit excepturi similique, cumque ad quos accusantium corporis sapiente aspernatur beatae a
+                        tenetur, cum rem!
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates culpa nihil non vitae est?
+                        Sed, odit excepturi similique, cumque ad quos accusantium corporis sapiente aspernatur beatae a
+                        tenetur, cum rem!
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates culpa nihil non vitae est?
+                        Sed, odit excepturi similique, cumque ad quos accusantium corporis sapiente aspernatur beatae a
+                        tenetur, cum rem!
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates culpa nihil non vitae est?
+                        Sed, odit excepturi similique, cumque ad quos accusantium corporis sapiente aspernatur beatae a
+                        tenetur, cum rem!
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates culpa nihil non vitae est?
+                        Sed, odit excepturi similique, cumque ad quos accusantium corporis sapiente aspernatur beatae a
+                        tenetur, cum rem!
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates culpa nihil non vitae est?
+                        Sed, odit excepturi similique, cumque ad quos accusantium corporis sapiente aspernatur beatae a
+                        tenetur, cum rem!
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates culpa nihil non vitae est?
+                        Sed, odit excepturi similique, cumque ad quos accusantium corporis sapiente aspernatur beatae a
+                        tenetur, cum rem!
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates culpa nihil non vitae est?
+                        Sed, odit excepturi similique, cumque ad quos accusantium corporis sapiente aspernatur beatae a
+                        tenetur, cum rem!
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates culpa nihil non vitae est?
+                        Sed, odit excepturi similique, cumque ad quos accusantium corporis sapiente aspernatur beatae a
+                        tenetur, cum rem!
                     </p>
                 </div>
-                <div id="Timeline" class="tabcontent w-full lg:w-4/5 p-8 mt-6">
-                    <div class="py-20 ">
-                        <h2 class="text-2xl text-gray-800">Timeline</h2>
-                        <p class=" py-5 leading-8 text-gray-500">
-                            My everyday work is presented here, I do what i love, <br>
-                            Who I am, what I do and my social networks, connect with me.
+            </section>
+            <!-- Experience -->
+            <section id="Experience" class="tabcontent container">
+                <div class="py-8">
+                    <div class="px-24">
+                        <div class="  w-full ">
+                            <span class="text-sm text-gray-600 tracking-widest">Experience</span>
+                            <h2 class="text-2xl text-gray-900 tracking-wider">WORK EXPERIENCE</h2>
+                            <p class=" py-5 leading-8 text-gray-600">
+                                My everyday work is presented here, I do what i love, <br>
+                                Who I am, what I do and my social networks, connect with me.
+                            </p>
+                        </div>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit libero harum accusantium
+                            sed nam soluta esse corrupti ex natus? Veritatis quae labore distinctio eum tenetur
+                            architecto quos. Doloribus, voluptatem molestias.
                         </p>
                     </div>
-                    <p class="py-6">
-                        👋 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis nobis in
-                        repellendus quam illum vitae laboriosam modi aspernatur est! Ipsa rerum expedita maxime.
-                        Doloribus
-                        explicabo eligendi neque provident commodi.
-                    </p>
-                    <p class="py-6">
-                        👋 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis nobis in
-                        repellendus quam illum vitae laboriosam modi aspernatur est! Ipsa rerum expedita maxime.
-                        Doloribus
-                        explicabo eligendi neque provident commodi.
-                    </p>
-                    <p class="py-6">
-                        👋 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis nobis in
-                        repellendus quam illum vitae laboriosam modi aspernatur est! Ipsa rerum expedita maxime.
-                        Doloribus
-                        explicabo eligendi neque provident commodi.
-                    </p>
 
                 </div>
+            </section>
+            <!-- Blog -->
+            <section id="Blog" class="tabcontent container">
+                <div class="py-8">
+                    <div class="">
+                        <div class=" w-full px-24 mb-10">
+                            <span class="text-sm text-gray-600 tracking-widest">READ</span>
+                            <h2 class="text-2xl text-gray-900 tracking-wider">RECENT BLOG</h2>
+                        </div>
+                        <div class=" flex flex-wrap justify-center ">
 
-                <div id="Blog" class="tabcontent w-full lg:w-4/5 p-8 mt-6 ">
-                    <div class="py-20 ">
-                        <h2 class="text-2xl text-gray-800">Blog</h2>
-                        <p class=" py-5 leading-8 text-gray-500">
-                            My everyday work is presented here, I do what i love, <br>
-                            Who I am, what I do and my social networks, connect with me.
-                        </p>
+                            <div class="max-w-sm rounded overflow-hidden shadow-lg w-1/2 m-5">
+                                <img class="w-full" src="/dayne-topkin-y5_mFlLMwJk-unsplash.c0fcacfc.jpg" alt="Sunset in the mountains">
+                                <div class="px-6 py-4">
+                                    <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                                    <p class="text-gray-700 text-base">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia,
+                                        nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                                    </p>
+                                </div>
+                                <div class="px-6 py-4">
+                                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#photography</span>
+                                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#travel</span>
+                                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#winter</span>
+                                </div>
+                            </div>
+                            <div class="max-w-sm rounded overflow-hidden shadow-lg w-1/2 m-5">
+                                <img class="w-full" src="/dayne-topkin-y5_mFlLMwJk-unsplash.c0fcacfc.jpg" alt="Sunset in the mountains">
+                                <div class="px-6 py-4">
+                                    <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                                    <p class="text-gray-700 text-base">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia,
+                                        nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                                    </p>
+                                </div>
+                                <div class="px-6 py-4">
+                                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#photography</span>
+                                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#travel</span>
+                                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#winter</span>
+                                </div>
+                            </div>
+
+
+                            <div class="max-w-sm rounded overflow-hidden shadow-lg w-1/2 m-5">
+                                <img class="w-full" src="/dayne-topkin-y5_mFlLMwJk-unsplash.c0fcacfc.jpg" alt="Sunset in the mountains">
+                                <div class="px-6 py-4">
+                                    <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                                    <p class="text-gray-700 text-base">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia,
+                                        nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                                    </p>
+                                </div>
+                                <div class="px-6 py-4">
+                                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#photography</span>
+                                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#travel</span>
+                                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#winter</span>
+                                </div>
+                            </div>
+
+
+                            <div class="max-w-sm rounded overflow-hidden shadow-lg w-1/2 m-5">
+                                <img class="w-full" src="/dayne-topkin-y5_mFlLMwJk-unsplash.c0fcacfc.jpg" alt="Sunset in the mountains">
+                                <div class="px-6 py-4">
+                                    <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                                    <p class="text-gray-700 text-base">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia,
+                                        nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                                    </p>
+                                </div>
+                                <div class="px-6 py-4">
+                                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#photography</span>
+                                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#travel</span>
+                                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#winter</span>
+                                </div>
+                            </div>
+
+
+                            <div class="max-w-sm rounded overflow-hidden shadow-lg w-1/2 m-5">
+                                <img class="w-full" src="/dayne-topkin-y5_mFlLMwJk-unsplash.c0fcacfc.jpg" alt="Sunset in the mountains">
+                                <div class="px-6 py-4">
+                                    <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                                    <p class="text-gray-700 text-base">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia,
+                                        nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                                    </p>
+                                </div>
+                                <div class="px-6 py-4">
+                                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#photography</span>
+                                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#travel</span>
+                                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#winter</span>
+                                </div>
+                            </div>
+
+
+                            <div class="max-w-sm rounded overflow-hidden shadow-lg w-1/2 m-5">
+                                <img class="w-full" src="/dayne-topkin-y5_mFlLMwJk-unsplash.c0fcacfc.jpg" alt="Sunset in the mountains">
+                                <div class="px-6 py-4">
+                                    <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                                    <p class="text-gray-700 text-base">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia,
+                                        nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                                    </p>
+                                </div>
+                                <div class="px-6 py-4">
+                                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#photography</span>
+                                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#travel</span>
+                                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#winter</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p class="py-6">
-                        👋 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis nobis in
-                        repellendus quam illum vitae laboriosam modi aspernatur est! Ipsa rerum expedita maxime.
-                        Doloribus
-                        explicabo eligendi neque provident commodi.
-                    </p>
-
                 </div>
-
-                <div id="Contact" class="tabcontent">
-                    <div class="py-20 ">
-                        <h2 class="text-2xl text-gray-800">Contact</h2>
-                        <p class=" py-5 leading-8 text-gray-500">
-                            My everyday work is presented here, I do what i love, <br>
-                            Who I am, what I do and my social networks, connect with me.
-                        </p>
-                    </div>
-                    <p class="py-6">
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis nobis in
-                        repellendus quam illum vitae laboriosam modi aspernatur est! Ipsa rerum expedita maxime.
-                        Doloribus
-                        explicabo eligendi neque provident commodi.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis nobis in
-                        repellendus quam illum vitae laboriosam modi aspernatur est! Ipsa rerum expedita maxime.
-                        Doloribus
-                        explicabo eligendi neque provident commodi.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis nobis in
-                        repellendus quam illum vitae laboriosam modi aspernatur est! Ipsa rerum expedita maxime.
-                        Doloribus
-                        explicabo eligendi neque provident commodi.
-                    </p>
-
-                </div>
-            </div>
+            </section>
         </div>
     </div>
 
-    
 
-
+    <footer class=" fixed left-0 right-0 bottom-0 z-10">
+        <div class=" bg-white border-t ml-64">
+            <div class="px-3 py-5">
+                <div class="flex flex-wrap">
+                    <div class="px-5 lg:w-1/4 sm:w-1/3 w-full lg:mb-0 mb-5 sm:text-justify text-center">
+                        <div class="mb-2 flex sm:justify-start justify-center"><img src="/chadidi.01cb7b57.jpg" class="h-full w-24 pb-2"></div>
+                        <div class="border-b"></div>
+                        <div class="flex py-3 px-5 text-gray-500 text-xl justify-center sm:justify-start"><a rel="nofollow" target="_blank" href="" class="hover:text-gray-600"><i class="fab fa-facebook mr-3 ml-3" aria-hidden="true"></i></a> <a rel="nofollow" target="_blank" href="" class="hover:text-gray-600"><i class="fab fa-twitter mr-3 ml-3" aria-hidden="true"></i></a> <a rel="nofollow" target="_blank" href="" class="hover:text-gray-600"><i class="fab fa-linkedin mr-3 ml-3" aria-hidden="true"></i></a> <a rel="nofollow" target="_blank" href="https://instagram.com/fevrok" class="hover:text-gray-600"><i class="fab fa-instagram mr-3 ml-3" aria-hidden="true"></i></a></div>
+                        <div class="border-b"></div>
+                        <div class="py-5"></div>
+                    </div>
+                    <div class="px-5 lg:w-1/4 sm:w-1/3 w-full lg:mb-0 mb-5 sm:text-justify text-center">
+                        <div class="font-medium mb-2">
+                            About us
+                        </div>
+                        <div class="text-sm text-gray-600"><a rel="nofollow" target="_blank" href="https://www.fevrok.com/sitemap" class="block hover:underline">Sitemap</a> <a href="/about-us/privacy-policy" class="hover:underline">Privacy policy</a></div>
+                    </div>
+                    <div class="px-5 lg:w-1/4 sm:w-1/3 w-full lg:mb-0 mb-5 sm:text-justify text-center">
+                        <div class="font-medium mb-2">
+                            Get in touch
+                        </div>
+                        <div class="text-sm text-gray-600"><a href="mailto:support@Portfolio.com" class="hover:underline">Contact us</a></div>
+                    </div>
+                    <div class="px-5 lg:w-1/4 sm:w-1/3 w-full lg:mb-0 mb-5 sm:text-justify text-center"></div>
+                </div>
+                <div class="border-b mt-5"></div>
+                <div class="flex justify-between">
+                    <div class="py-3 text-sm text-gray-600">
+                        ©2020 Portfolio. All Rights Reserved.
+                    </div>
+                    <div class="mt-3">
+                        <div class="cursor-pointer px-3 py-1 leading-none border rounded"><i class="fa fa-globe" aria-hidden="true"></i> &nbsp; english
+                        </div>
+                        <div class="z-10 opacity-0 pointer-events-none" x-placement="top-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(1113px, 343px, 0px);">
+                            <div class="shadow-md rounded bg-white py-2 w-32 -mt-1">
+                                <ul class="popup-menu"><a href="/ar/chadidi02/" class="">
+                                        <li>العربية</li>
+                                    </a> <a href="/chadidi02/" aria-current="page" class="nuxt-link-exact-active nuxt-link-active">
+                                        <li>English</li>
+                                    </a> <a href="/fr/chadidi02/" class="">
+                                        <li>Français</li>
+                                    </a></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
