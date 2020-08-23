@@ -72,10 +72,14 @@
                         <img class=" w-32 h-32 md:w-64 md:h-64 md:rounded rounded-full " src="img/chadidi.jpg" alt="">
                     </div>
                     <div class="w-1/2 leading-loose md:ml-0 ml-5">
-                        <h2 class="text-lg font-bold">Souhaib Chadidi</h2>
+                        <!--name-->
+                        <h2 id="name" class="text-lg font-bold"></h2>
                         <div class="text-purple-500">I'm Souhaib, I do Front-end_ Dev</div>
-                        <div class="text-gray-600"><img class="w-4 float-left block mr-2" style="margin-top: 8px;"
-                                src="icons/place.svg" alt=""> Tetouan, Morocco</div>
+                        <div class="text-gray-600">
+                            <img class="w-4 float-left block mr-2" style="margin-top: 8px;" src="icons/place.svg"
+                                alt="">
+                            <span id="address"></span>
+                        </div>
                         <div class="text-gray-600"><img class="w-4 float-left block mr-2" style="margin-top: 8px;"
                                 src="icons/link.svg" alt=""> <a class="" href="https://www.fevrok.com/">fevrok</a>
                         </div>
@@ -123,12 +127,10 @@
                         <div class="  w-full ">
                             <span class="text-sm text-gray-600 tracking-widest">About me.</span>
                             <h2 class="text-2xl text-gray-900 tracking-wider">WHO AM I?</h2>
-                            <p class=" py-5 leading-8 text-gray-600">
-                                My everyday work is presented here, I do what i love, <br>
-                                Who I am, what I do and my social networks, connect with me.
+                            <p id="summary" class=" py-5 leading-8 text-gray-600">
                             </p>
                         </div>
-                        <div class="pt-4 pb-12 w-full">
+                        <div class=" pt-4 pb-12 w-full">
                             <div class=" mb-3 ">
                                 <div class="flex items-center justify-between p-3">
                                     <div class="flex items-center">
@@ -140,48 +142,7 @@
                                     </div>
                                 </div>
                                 <div class="p-3">
-                                    <table class="w-full">
-                                        <tr>
-                                            <td class="ltr:pr-2 rtl:pl-2 rtl:text-left ltr:text-right truncate"><span
-                                                    class="font-medium text-sm">JavaScript : </span></td>
-                                            <td valign="bottom" class="w-full">
-                                                <div
-                                                    class="rounded-full h-1 bg-white-100 bg-gray-200 overflow-hidden mb-2">
-                                                    <div class="bg-purple-500 h-full" style="width: 20%;"></div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ltr:pr-2 rtl:pl-2 rtl:text-left ltr:text-right truncate"><span
-                                                    class="font-medium text-sm">CSS : </span></td>
-                                            <td valign="bottom" class="w-full">
-                                                <div
-                                                    class="rounded-full h-1 bg-white-100 bg-gray-200 overflow-hidden mb-2">
-                                                    <div class="bg-purple-500 h-full" style="width: 80%;"></div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ltr:pr-2 rtl:pl-2 rtl:text-left ltr:text-right truncate"><span
-                                                    class="font-medium text-sm">HTML : </span></td>
-                                            <td valign="bottom" class="w-full">
-                                                <div
-                                                    class="rounded-full h-1 bg-white-100 bg-gray-200 overflow-hidden mb-2">
-                                                    <div class="bg-purple-500 h-full" style="width: 100%;"></div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ltr:pr-2 rtl:pl-2 rtl:text-left ltr:text-right truncate"><span
-                                                    class="font-medium text-sm">testing : </span></td>
-                                            <td valign="bottom" class="w-full">
-                                                <div
-                                                    class="rounded-full h-1 bg-white-100 bg-gray-200 overflow-hidden mb-2">
-                                                    <div class="bg-purple-500 h-full" style="width: 40%;"></div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
+                                    <table class="w-full" id="skills"></table>
                                 </div>
                             </div>
                         </div>
@@ -557,6 +518,7 @@
     </script>
 
     <script src="src/index.js"></script>
+    <script src="src/app.js"></script>
 </body>
 
 </html>
