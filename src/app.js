@@ -1,14 +1,4 @@
-import axios from "axios";
-import "regenerator-runtime/runtime.js";
-
-async function getUser(username) {
-	const { data } = await axios.get(
-		`https://www.fevrok.dev/api/v1/portfolio/${username}/?api_key=du4iwvio46`
-	);
-
-	console.log(data);
-	return data;
-}
+import { getUser } from "./api/user";
 
 function placeText(id, text) {
 	var q = document.getElementById(id);
@@ -26,12 +16,45 @@ function displayUser(username) {
 
 		placeText("name", basics.name);
 		placeText("username", basics.username);
-		placeText("summary", basics.summary);
-		placeText("address", basics.location.address);
+		placeText("about", basics.summary);
+		placeText("address", basics.region);
+		placeText("email", basics.email);
+
+		// placeText("company", work.company);
+		// placeText("position", work.position);
+		// placeText("startDate", work.startDate);
+		// placeText("summary", work.summary);
+
+		// let work = user.work;
+		// for (let i = 0; i < arr.length; i++) {
+		//     const element = arr[i];
+		//     document.getElementById("about1", work.summary);
+		// }
+
+		placeHtml("picture", `<img src="${basics.picture}"/>`);
+
+		const work = user.work;
+		for (let i = 0; i < work.length; i++) {
+			placeHtml(
+				"work",
+				`<p class="text-sm mb-1 text-gray-800">${
+					!work[i].summary ? "" : work[i].summary
+				}</p>
+				<div class="text-sm">
+					<span class="text-gray-500">Company : </span>
+					<span class="font-medium text-gray-800">${work[i].company}</span>
+				</div>
+				<div class="text-sm">
+					<span class="text-gray-500">Role : </span>
+					<span class="font-medium text-gray-800">${work[i].position}</span>
+				</div>`
+			);
+		}
+		// placeHtml("text-2", work[0].company);
+		// placeHtml("text-3", work[0].position);
 
 		let skills = user.skills;
 		for (let i = 0; i < skills.length; i++) {
-			console.log(skills[i].name);
 			placeHtml(
 				"skills",
 				`<tr>
@@ -48,5 +71,20 @@ function displayUser(username) {
 		}
 	});
 }
-
 displayUser("chadidi");
+
+// function myFunction() {
+// 	document.getElementById("myDropdown").classList.toggle("show");
+// }
+// window.onclick = function (event) {
+// 	if (!event.target.matches(".dropbtn")) {
+// 		var dropdowns = document.getElementsByClassName("dropdown-content");
+// 		var i;
+// 		for (i = 0; i < dropdowns.length; i++) {
+// 			var openDropdown = dropdowns[i];
+// 			if (openDropdown.classList.contains("show")) {
+// 				openDropdown.classList.remove("show");
+// 			}
+// 		}
+// 	}
+// };

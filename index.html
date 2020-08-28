@@ -13,31 +13,8 @@
         integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
         crossorigin="anonymous"></script>
     <!-- fonts google -->
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-
-    <style>
-        @import url("https://fonts.googleapis.com/css?family=Lato");
-
-        html {
-            font-family: "Lato", sans-serif;
-        }
-
-        .Inconsolata {
-            font-family: "Inconsolata", monospace;
-        }
-
-        .active,
-        .btn:hover {
-            color: #9f7aea;
-            border-left-width: 5px;
-
-        }
-
-        .effect:hover .info {
-            opacity: 1;
-        }
-    </style>
 </head>
 
 <body class="">
@@ -47,46 +24,78 @@
         <!-- Begin Navbar -->
         <aside
             class="myDIV fixed top-0 left-0 bottom-0 md:w-1/4 lg:w-1/5 h-0 md:h-screen overflow-y-hidden bg-white shadow-lg">
-            <div class=" w-full h-full antialiased flex flex-col hover:cursor-pointer">
-                <a id="defaultOpen"
-                    class="btn tablinks block  active p-3 w-full text-xl text-left font-semibold no-underline pl-12 border-purple-500  outline-none"
-                    href="#Home" onclick="openCity(event, 'Home')">Home</a>
-                <a class="btn tablinks block  p-3 w-full text-xl text-left font-semibold no-underline pl-12 border-purple-500  outline-none"
-                    href="#Work" onclick="openCity(event, 'Work')">Work</a>
-                <a class="btn tablinks block  p-3 w-full text-xl text-left font-semibold no-underline pl-12 border-purple-500  outline-none"
-                    href="#Experience" onclick="openCity(event, 'Experience')">Experience</a>
-                <a class="btn tablinks block  p-3 w-full text-xl text-left font-semibold no-underline pl-12 border-purple-500  outline-none"
-                    href="#Blog" onclick="openCity(event, 'Blog')">Blog</a>
+            <div class="py-4 text-gray-500 dark:text-gray-400">
+                <ul>
+                    <li class="relative px-6 py-3">
+                        <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                            href="">
+                            <span class="ml-4">Home</span>
+                        </a>
+                    </li>
+                    <li class="relative px-6 py-3">
+                        <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                            href="">
+                            <span class="ml-4">Cards</span>
+                        </a>
+                    </li>
+                    <li class="relative px-6 py-3">
+                        <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                            href="">
+                            <span class="ml-4">Charts</span>
+                        </a>
+                    </li>
+                    <li class="relative px-6 py-3">
+                        <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                            href="">
+                            <span class="ml-4">Buttons</span>
+                        </a>
+                    </li>
+                    <li class="relative px-6 py-3">
+                        <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                            href="">
+                            <span class="ml-4">Modals</span>
+                        </a>
+                    </li>
+                    <li class="relative px-6 py-3">
+                        <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                            href="">
+                            <span class="ml-4">Tables</span>
+                        </a>
+                    </li>
+
+                </ul>
             </div>
         </aside>
 
         <!-- End Navbar -->
 
-        <div class="Inconsolata ml-64 w-full md:w-3/4 lg:w-4/5 p-5 md:px-8 lg:24"
+        <div class=" w-full md:w-3/4 lg:w-4/5 p-5 md:px-8 lg:24"
             style="    margin-bottom: 19.7rem; background: #eeeeee;">
             <!-- home -->
             <section id="Home" class="tabcontent container">
 
                 <div class="w-full md:flex flex flex-row flex-wrap  p-5 mb-5 ">
                     <div class="w-1/3 text-left">
-                        <img class=" w-32 h-32 md:w-64 md:h-64 md:rounded rounded-full " src="img/chadidi.jpg" alt="">
+                        <div class="w-32 h-32 md:w-64 md:h-64 md:rounded rounded-full" id="picture">
+                        </div>
                     </div>
                     <div class="w-1/2 leading-loose md:ml-0 ml-5">
                         <!--name-->
                         <h2 id="name" class="text-lg font-medium text-gray-800"></h2>
-                        <div class="text-purple-500">I'm Souhaib, I do Front-end_ Dev</div>
+                        <div class="text-purple-500">I'm Souhaib, I do Frontend</div>
                         <div class="text-gray-600">
                             <img class="w-4 float-left block mr-2" style="margin-top: 8px;" src="icons/place.svg"
                                 alt="">
                             <span id="address"></span>
                         </div>
+                        <!-- <div class="text-gray-600"><img class="w-4 float-left block mr-2" style="margin-top: 8px;"
+                                src="icons/link.svg" alt=""> <a id="website" class=""
+                                href="https://www.fevrok.com/">fevrok</a>
+                        </div> -->
                         <div class="text-gray-600"><img class="w-4 float-left block mr-2" style="margin-top: 8px;"
-                                src="icons/link.svg" alt=""> <a class="" href="https://www.fevrok.com/">fevrok</a>
-                        </div>
-                        <div class="text-gray-600"><img class="w-4 float-left block mr-2" style="margin-top: 8px;"
-                                src="icons/envelope.svg" alt=""><a href="">s.chadidi02@gmail.com</a></div>
-                        <div class="text-gray-600"><img class="w-4 float-left block mr-2" style="margin-top: 8px;"
-                                src="icons/phone.svg" alt=""> <a href="">(+212) 662864245</a></div>
+                                src="icons/envelope.svg" alt=""><a id="email" href=""></a></div>
+                        <!-- <div class="text-gray-600"><img class="w-4 float-left block mr-2" style="margin-top: 8px;"
+                                src="icons/phone.svg" alt=""> <a id="phone" href=""></a></div> -->
                         <div class=" w-64 mt-5 mx-0 pb-16 lg:pb-0  flex flex-wrap items-center justify-between">
 
                             <a class="link" href="#" data-tippy-content="@twitter_handle"><svg
@@ -127,7 +136,8 @@
                         <div class="  w-full ">
                             <span class="text-sm text-gray-600 tracking-widest">About me.</span>
                             <h2 class="text-2xl text-gray-900 tracking-wider">WHO AM I?</h2>
-                            <p id="summary" class=" py-5 leading-8 text-gray-600">
+                            <p id="about" class=" py-5 leading-8 text-gray-600">
+
                             </p>
                         </div>
                         <div class=" pt-4 pb-12 w-full">
@@ -151,10 +161,47 @@
                 </section>
 
             </section>
-            <!-- Work -->
+
             <section id="Work" class="tabcontent container">
                 <div class="w-full p-5 mb-5">
+                    <div class="py-2 px-3 border rounded mb-3">
+                        <div class="flex">
+                            <div class="flex-grow">
+                                <div class="flex">
+                                    <div class="text-xs font-medium px-3 py-1 mb-2 border-b 
+                                        border-gray-300 bg-gray-200 text-gray-600 
+                                        ltr:rounded-r-full rtl:rounded-l-full ltr:-ml-3 rtl:-mr-3" id="startDate">
+                                        &nbsp;
+                                        <i class="fa fa-caret-right" aria-hidden="true"></i> &nbsp;
+                                        now
+                                    </div>
+                                </div>
+                                <div class="font-medium text-blue-600" id="">Developer</div>
+                            </div>
+                            <div>
+                                <div class="dropdown">
+                                    <button onclick=" myFunction() " class="dropbtn text-gray-500"> <i
+                                            class="fa fa-ellipsis-h"></i></button>
+                                    <div class="z-10 opacity-0 pointer-events-none dropdown-content" id="myDropdown"
+                                        style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(774px, 382px, 0px);">
+                                        <div class="shadow-md rounded bg-white py-2 w-32 -mt-1">
+                                            <ul class="popup-menu" id="myDropdown">
+                                                <a>
+                                                    <li>edit</li>
+                                                </a>
+                                                <a>
+                                                    <li>delete</li>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="work">
 
+                        </div>
+                    </div>
                 </div>
             </section>
             <!-- Experience -->
@@ -382,16 +429,10 @@
             </div>
         </div>
     </footer>
-
-
-
-
-
-
     <script>
         // Add active class to the current button (highlight it)
         var header = document.getElementById("myDIV");
-        var btns = document.querySelectorAll('.btn');
+        var btns = document.querySelectorAll(".btn");
         for (var i = 0; i < btns.length; i++) {
             btns[i].addEventListener("click", function () {
                 var current = document.getElementsByClassName("active");
@@ -417,7 +458,6 @@
         // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
     </script>
-
     <script src="src/index.js"></script>
     <script src="src/app.js"></script>
 </body>

@@ -4,6 +4,7 @@
 	"description": "To Show Full Project",
 	"main": "index.js",
 	"dependencies": {
+		"app": "^0.1.0",
 		"autoprefixer": "^9.8.5",
 		"axios": "^0.19.2",
 		"css": "^3.0.0",
