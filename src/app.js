@@ -61,13 +61,21 @@ function displayUser(username) {
 
 		/*== Skills ==*/
 
-		// let skills = user.skills;
-		// for (let i = 0; i < skills.length; i++) {
-		// 	placeHtml(
-		// 		"skills",
-		// 		``
-		// 	);
-		// }
+		let skills = user.skills;
+		placeHtml(
+			"skills",
+			` 
+				<div class=" mt-12 px-5">
+					<span class=" text-2xl text-indigo-500 font-bold mr-5">SKILLS: </span>
+					<span
+						class="border-indigo-500 border hover:bg-red-400 text-gray-200 font-bold py-2 px-4 rounded-full">${skills[0].name}</span>
+					<span
+						class="border-indigo-500 border hover:bg-blue-400 text-gray-200 font-bold py-2 px-4 rounded-full">${skills[1].name}</span>
+					<span
+						class=" border-indigo-500 border hover:bg-yellow-500 text-gray-200 font-bold py-2 px-4 rounded-full">${skills[2].name}</span>
+
+				</div>`
+		);
 	});
 }
 displayUser("chadidi");
