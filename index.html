@@ -29,7 +29,9 @@
 
     <!-- Side bar-->
     <div id="sidebar" class="h-screen w-16 menu bg px-4 flex items-center nunito static fixed shadow">
-
+        <!-- <div class="">
+            <div class="logo text-white text-2xl absolute top-0 left-0 py-5 px-6 bg-orange-600">S</div>
+        </div> -->
         <ul class="list-reset">
             <li class="my-2 md:my-0">
                 <a href="#" id="defaultOpen" onclick="openCity(event, 'page_1')"
@@ -53,7 +55,8 @@
             <li class="my-2 md:my-0">
                 <a href="#" onclick="openCity(event, 'page_4')"
                     class="tablinks block py-1 md:py-3 pl-1 align-middle no-underline hover:text-indigo-400">
-                    <i class="far fa-eye mr-5"></i><span class="w-full inline-block pb-1 md:pb-0 text-sm">My Work</span>
+                    <i class="far fa-eye mr-5"></i><span
+                        class="w-full inline-block pb-1 md:pb-0 text-sm">Portfolio</span>
                 </a>
             </li>
             <li class="my-2 md:my-0">
@@ -180,7 +183,7 @@
             <!-- skills examples -->
             <section id="page_3" class="tabcontent ">
                 <h2 class="fo color py-5 tracking-wider text-center">Skills Examples.</h2>
-                <div class="text-center leading-6 text-gray-300 text-sm">
+                <div class="text-center leading-6 text-gray-300 text-sm m-auto">
                     <p>
                         The main area of my expertise is front end development (client side of the web).
                     </p>
@@ -195,12 +198,65 @@
                 <div id="skills"></div>
             </section>
             <!-- skills examples end -->
-            <!-- Work -->
+            <!-- PORTFOLIO -->
             <section id="page_4" class="tabcontent">
-                <h2>#My Work</h2>
-                <h3>This is the fourth section</h3>
+                <div class=" ">
+                    <section class="flex flex-wrap py-3 px-12 mb-10">
+                        <!-- portfolio -->
+                        <div class="w-1/2 ">
+                            <h1 class="fo color py-5 tracking-wider">Portfolio.</h1>
+                            <p class="">
+                                Our everyday work is presented here, we do what we love,<br>
+                                Case studies, video presentations and photo-shootings below.
+                            </p>
+                        </div>
+                        <!-- portfolio end -->
+                        <!-- menu portfoilo -->
+                        <div class="w-1/2 relative">
+                            <ul class="snip1135 flex absolute bottom-0 right-0">
+                                <li class="mr-5 active"><a class="" href="">All</a></li>
+                                <li class="mr-5"><a class="" href="">Virtual Reality</a></li>
+                                <li class="mr-5"><a class="" href="">Mobile Development</a></li>
+                                <li class="mr-5"><a class="" href="">Web Development</a></li>
+                            </ul>
+                        </div>
+                        <!-- menu portfoilo -->
+                    </section>
+
+                    <section>
+                        <div class="gallery">
+                            <div class=" img-container">
+                                <img id="myImg" src="./img/previews/S-1.jpg" alt="this is a flock birds"
+                                    data-original="./full/p-1.jpg">
+                            </div>
+
+                            <div class=" img-container">
+                                <img src="./img/previews/S-2.jpg" alt="this is a flock birds_1" data-original="p-2.jpg">
+                            </div>
+
+                            <div class=" img-container">
+                                <img src="./img/previews/S-3.jpg" alt="this is a flock birds-2" data-original="p-3.jpg">
+                            </div>
+
+                            <div class=" img-container">
+                                <img src="./img/previews/S-2.jpg" alt="Snow">
+                            </div>
+                        </div>
+
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
+
+
+                    </section>
+
+                    <!-- +_+ -->
+                </div>
             </section>
-            <!-- Work end -->
+            <!-- PORTFOLIO end -->
             <!-- contact -->
             <section id="page_5" class="tabcontent">
                 <h2>#contact</h2>
