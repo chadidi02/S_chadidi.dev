@@ -105,7 +105,6 @@ hover\:border-none:hover {
 .gallery {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-	/* min-height: 100vh; */
 	gap: 1rem;
 	margin: 1rem;
 }
