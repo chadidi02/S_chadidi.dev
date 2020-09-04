@@ -44,7 +44,7 @@ function displayUser(username) {
 			`
 			<div class=" text-left">
 				<h1 class="text-2xl title">About me<span class="logo-color">.</span></h1>
-				<p class="text-sm px-10 text-gray-600">${basics.summary}</p>
+				<p class="text-sm my-5 px-10 text-gray-600">${basics.summary}</p>
 			</div>`
 		);
 		/*== About end ==*/
@@ -55,7 +55,7 @@ function displayUser(username) {
 			"skills",
 			` <div class="">
 				<h1 class="text-2xl title">Skills<span class="logo-color">.</span></h1>
-				<div class=" mt-5 px-10">
+				<div class=" my-5 px-10">
 					<span
 						class="border-indigo-500 border py-2 px-4 rounded-full inline-block mb-2 items-skills">${skills[0].name}</span>
 					<span
@@ -82,7 +82,7 @@ function displayUser(username) {
 			"Profiles",
 			`
 			<h1 class="text-2xl title">Profiles<span class="logo-color">.</span></h1>
-			<div class=" mt-5">
+			<div class=" my-5">
 				<ul class="snip1135 flex px-10 text-base">
 					<li class="mr-5"><a class="" target="_blank"
 							href="https://github.com/chadidi02">GitHub</a></li>

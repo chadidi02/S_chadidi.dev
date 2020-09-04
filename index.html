@@ -22,14 +22,7 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
 
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css'>
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </head>
 
 <body class="flex h-screen  bg-co text-gray-900">
@@ -45,19 +38,13 @@
             <div class="it"></div>
         </div>
     </div>
-    <script>
-        window.onload = () => {
-            setTimeout(() => {
-                document.querySelector("body").classList.add("display");
-            }, 1000);
-        };
-    </script>
+
 
     <!-- Side bar-->
     <aside class="z-20 flex-shrink-0 hidden w-64 overflow-y-auto bg md:block">
         <div class="py-4">
             <a class="ml-6 text-lg font-bold" href="#">
-                me<span class="logo-color">.</span>
+                Me<span class="logo-color">.</span>
             </a>
             <ul class="mt-6">
                 <li class="relative px-6 py-3">
@@ -80,7 +67,7 @@
                             <path d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path>
                             <path d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path>
                         </svg>
-                        <span class="ml-4">Projects</span>
+                        <span class="ml-4">Portfolio</span>
                     </a>
                 </li>
                 <li class="relative px-6 py-3">
@@ -114,21 +101,21 @@
                     <div class=" ">
                         <section class="flex flex-wrap py-3 px-12 mb-10">
                             <!-- portfolio -->
-                            <div class="w-1/2 ">
-                                <h1 class="fo color py-5 tracking-wider">Projects.</h1>
-                                <p class="">
-                                    Our everyday work is presented here, we do what we love,<br>
-                                    Case studies, video presentations and photo-shootings below.
-                                </p>
+                            <div class=" text-left w-1/2">
+                                <h1 class="text-2xl title">Portfolio<span class="logo-color">.</span></h1>
+                                <p class="text-sm my-5 px-10 text-gray-600">Our everyday work is presented here, we do
+                                    what
+                                    we love,<br>
+                                    Case studies, video presentations and photo-shootings below.</p>
                             </div>
                             <!-- portfolio end -->
                             <!-- menu portfoilo -->
                             <div class="w-1/2 relative">
                                 <ul class="snip1135 flex absolute bottom-0 right-0">
-                                    <li class="mr-5 active"><a class="" href="">All</a></li>
-                                    <li class="mr-5"><a class="" href="">Web Design</a></li>
-                                    <li class="mr-5"><a class="" href="">Mobile Development</a></li>
-                                    <li class="mr-5"><a class="" href="">Photographer</a></li>
+                                    <li class="mr-3 active"><a class="" href="">All</a></li>
+                                    <li class="mr-3"><a class="" href="">Web Design</a></li>
+                                    <li class="mr-3"><a class="" href="">Web Development</a></li>
+                                    <li class="mr-3"><a class="" href="">Photographer</a></li>
                                 </ul>
                             </div>
                             <!-- menu portfoilo -->
@@ -177,7 +164,6 @@
             </div>
         </div>
     </main>
-    <!-- JavaScript  -->
     <script>
         function openCity(evt, cityName) {
             var i, tabcontent, tablinks;
@@ -196,9 +182,8 @@
         // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
     </script>
-    <!-- JavaScript end  -->
+
     <script src="src/js/index.js"></script>
-    <script src="src/js/app.js"></script>
 </body>
 
 </html>
