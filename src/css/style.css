@@ -278,3 +278,11 @@ hover\:border-none:hover {
 .img-container img:hover {
 	transform: scale(1.2);
 }
+
+.tabcontent {
+	display: none;
+}
+
+.active {
+	color: #08fdd8;
+}
