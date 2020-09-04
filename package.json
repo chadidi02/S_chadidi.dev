@@ -8,9 +8,11 @@
 		"autoprefixer": "^9.8.5",
 		"axios": "^0.19.2",
 		"css": "^3.0.0",
+		"jquery": "^3.5.1",
 		"postcss": "^7.0.32",
 		"postcss-modules": "^3.2.0",
 		"regenerator-runtime": "^0.13.7",
+		"src": "^1.1.2",
 		"tailwindcss": "^1.5.1"
 	},
 	"devDependencies": {},
