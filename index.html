@@ -5,27 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>S.Chadidi</title>
     <meta name="description" content="description here">
     <meta name="keywords" content="keywords,here">
-
-    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/css/style.css">
-
+    <title>S.Chadidi</title>
     <link href="https://unpkg.com/tailwindcss@next/dist/tailwind.min.css" rel="stylesheet">
     <!-- font-awesome -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
         integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
         crossorigin="anonymous"></script>
-    <!-- fonts google -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
-
 
 </head>
 
-<body class="flex h-screen  bg-co text-gray-900">
+<body class="flex h-screen  background">
     <div class="spinner-container">
         <div class="circles">
             <div class="it"></div>
@@ -85,84 +76,163 @@
         </div>
     </aside>
     <!-- Side bar end-->
-    <main class="h-full pb-16 w-full overflow-y-auto  ">
-        <div class="container  px-6 mx-auto">
-            <div id="fullpage">
-                <!-- Home -->
-                <section id="page_0" class="tabcontent home-page py-6">
-                    <div class="md:flex" id="portfolio_1"></div>
-                    <div class="mt-10" id="about-me"></div>
-                    <div class="mt-10" id="skills"></div>
-                    <div class="mt-10 " id="Profiles"></div>
-                </section>
-                <!-- Home end -->
-                <!-- PORTFOLIO -->
-                <section id="page_1" class="tabcontent">
-                    <div class=" ">
-                        <section class="flex flex-wrap py-3 px-12 mb-10">
-                            <!-- portfolio -->
-                            <div class=" text-left w-1/2">
-                                <h1 class="text-2xl title">Portfolio<span class="logo-color">.</span></h1>
-                                <p class="text-sm my-5 px-10 text-gray-600">Our everyday work is presented here, we do
-                                    what
-                                    we love,<br>
-                                    Case studies, video presentations and photo-shootings below.</p>
+    <main class="h-full w-full overflow-y-auto">
+        <div class="">
+            <!-- Home -->
+            <section id="page_0 home" class="tabcontent">
+                <!-- home-page -->
+                <section class="home-page">
+                    <div class="relative">
+                        <div class=" absolute top-0 left-0 mt-40 ml-8">
+                            <h1 class="text-5xl home-title tracking-widest capitalize">
+                                Hi,
+                            </h1>
+                            <h1 class="text-5xl home-title tracking-widest capitalize ">
+                                i'm
+                                <span id="name">
+                                </span>
+                                <span class="-ml-4">,</span>
+                            </h1>
+                            <h1 class="text-5xl home-title tracking-widest capitalize">
+                                web developer
+                            </h1>
+
+                            <div class=" mt-10 ml-10">
+                                <a href="" class="link-contact tracking-widest font-light py-3 px-10 rounded">
+                                    CONTACT ME
+                                </a>
                             </div>
-                            <!-- portfolio end -->
-                            <!-- menu portfoilo -->
-                            <div class="w-1/2 relative">
-                                <ul class="snip1135 flex absolute bottom-0 right-0">
-                                    <li class="mr-3 active"><a class="" href="">All</a></li>
-                                    <li class="mr-3"><a class="" href="">Web Design</a></li>
-                                    <li class="mr-3"><a class="" href="">Web Development</a></li>
-                                    <li class="mr-3"><a class="" href="">Photographer</a></li>
-                                </ul>
-                            </div>
-                            <!-- menu portfoilo -->
-                        </section>
-
-                        <section>
-                            <div class="gallery">
-                                <div class=" img-container">
-                                    <a data-fancybox="gallery" href="img/1.png"><img src="img/1.png"></a>
-                                </div>
-
-                                <div class=" img-container">
-                                    <a data-fancybox="gallery" href="img/2.png"><img src="img/2.png"></a>
-                                </div>
-                                <div class=" img-container">
-                                    <a data-fancybox="gallery" href="img/3.png"><img src="img/3.png"></a>
-                                </div>
-
-                                <div class=" img-container">
-                                    <a data-fancybox="gallery" href="img/4.png"><img src="img/4.png"></a>
-                                </div>
-                                <div class=" img-container">
-                                    <a data-fancybox="gallery" href="img/5.png"><img src="img/5.png"></a>
-                                </div>
-
-                                <div class=" img-container">
-                                    <a data-fancybox="gallery" href="img/6.png"><img src="img/6.png"></a>
-                                </div>
-                                <div class=" img-container">
-                                    <a data-fancybox="gallery" href="img/7.jpg"><img src="img/7.jpg"></a>
-                                </div>
-
-                            </div>
-                        </section>
-                        <!-- +_+ -->
+                        </div>
                     </div>
-                </section>
-                <!-- PORTFOLIO end -->
+                </section> <!-- home-page end -->
+                <div class=" mb-10">
+                    <!-- About -->
+                    <div class="flex flex-wrap" id="about-me"></div>
+                    <div class="flex flex-wrap" id="skills">
+                        <!-- img -->
+                        <div class="w-full sm:w-1/2">
+                            <div class="home__about-figure m-auto p-1">
+                                <img class="w-full h-full mb-6 md:mb-5" src="img/me.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Home end -->
 
-                <!-- contact -->
-                <section id="page_2" class="tabcontent">
-                    <h2>#contact</h2>
-                    <h3>This is the fourth section</h3>
-                </section>
-                <!-- contact end -->
-            </div>
+            <!-- PORTFOLIO -->
+            <section id="page_1" class="tabcontent">
+                <div class=" ">
+                    <section class="flex flex-wrap py-3 px-12 mb-10">
+                        <!-- portfolio -->
+                        <div class=" text-left w-1/2">
+                            <h1 class="text-2xl title">Portfolio<span class="logo-color">.</span></h1>
+                            <p class="text-sm my-5 px-10 text-gray-600">Our everyday work is presented here, we do
+                                what
+                                we love,<br>
+                                Case studies, video presentations and photo-shootings below.</p>
+                        </div>
+                        <!-- portfolio end -->
+                        <!-- menu portfoilo -->
+                        <div class="w-1/2 relative">
+                            <ul class="snip1135 flex absolute bottom-0 right-0">
+                                <li class="mr-3 active"><a class="" href="">All</a></li>
+                                <li class="mr-3"><a class="" href="">Web Design</a></li>
+                                <li class="mr-3"><a class="" href="">Web Development</a></li>
+                                <li class="mr-3"><a class="" href="">Photographer</a></li>
+                            </ul>
+                        </div>
+                        <!-- menu portfoilo -->
+                    </section>
+
+                    <section>
+                        <div class="gallery">
+                            <div class=" img-container">
+                                <a data-fancybox="gallery" href="img/1.png"><img src="img/1.png"></a>
+                            </div>
+
+                            <div class=" img-container">
+                                <a data-fancybox="gallery" href="img/2.png"><img src="img/2.png"></a>
+                            </div>
+                            <div class=" img-container">
+                                <a data-fancybox="gallery" href="img/3.png"><img src="img/3.png"></a>
+                            </div>
+
+                            <div class=" img-container">
+                                <a data-fancybox="gallery" href="img/4.png"><img src="img/4.png"></a>
+                            </div>
+                            <div class=" img-container">
+                                <a data-fancybox="gallery" href="img/5.png"><img src="img/5.png"></a>
+                            </div>
+
+                            <div class=" img-container">
+                                <a data-fancybox="gallery" href="img/6.png"><img src="img/6.png"></a>
+                            </div>
+                            <div class=" img-container">
+                                <a data-fancybox="gallery" href="img/7.jpg"><img src="img/7.jpg"></a>
+                            </div>
+
+                        </div>
+                    </section>
+                    <!-- +_+ -->
+                </div>
+            </section>
+            <!-- PORTFOLIO end -->
+
+            <!-- contact -->
+            <section id="page_2" class="tabcontent">
+                <h2>#contact</h2>
+                <h3>This is the fourth section</h3>
+            </section>
+            <!-- contact end -->
+
         </div>
+        <footer class=" ">
+            <div class="mt-8">
+                <div class="container mx-auto shadow">
+                    <div class="px-5">
+                        <div class="flex flex-wrap items-center justify-between py-8">
+                            <div class="justify-start justify-between text-xs w-1/3 flex">
+                                <div class="mr-4">
+                                    &copy; 2020 chadidi All rights reserved
+                                </div>
+                            </div>
+                            <div class="w-1/3">
+                                <nav class="">
+                                    <div class="flex flex-wrap justify-center">
+                                        <a class="no-underline text-xs md:text-sm mr-5" href="#">
+                                            Share »
+                                        </a>
+                                        <a class="no-underline hover:text-teal-500 mr-5" href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a class="no-underline hover:text-teal-500 mr-5" href="#">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a class="no-underline hover:text-teal-500 mr-5" href="#">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                        <a class="no-underline hover:text-teal-500" href="#">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class=" text-xs w-1/3 flex-wrap flex justify-star lg:justify-end text-left">
+                                <div class="ml-5">
+                                    <a href="mailto:souhaibchadidi02@gmail.com" class="no-underline">
+                                        <span id="email"></span>
+                                    </a>
+                                </div>
+                                <div class="ml-4">
+                                    <a href="#" class="no-underline"><span id="phone"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </main>
 
     <script src="src/js/index.js"></script>
